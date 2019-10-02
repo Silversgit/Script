@@ -1,1 +1,1 @@
-# CybSec Begineer Script
+# CybSec Beginner Script
