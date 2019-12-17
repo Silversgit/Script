@@ -1,28 +1,28 @@
 RED='\033[0;32m'
 NC='\033[0m'
 
-echo -e "${RED}[*] CTF T00lkit Installer${NC}"
-echo -e "${RED}[*] Setting up Directories${NC}"
+echo "${RED}[*] CTF T00lkit Installer${NC}"
+echo "${RED}[*] Setting up Directories${NC}"
 
 cd ~
 sudo mkdir ctftool
-sudo mkdir ~/toolkit/wordlists
+mkdir ~/toolkit/wordlists
 
 sudo apt-get update
 #Networking Tools
-echo -e "${RED}[*] Installing Nmap${NC}"
+echo "${RED}[*] Installing Nmap${NC}"
 sudo apt-get install -y nmap
-echo -e "${RED}[*] Installing Tcpdump${NC}"
+echo "${RED}[*] Installing Tcpdump${NC}"
 sudo apt-get install -y tcpdump
-echo -e "${RED}[*] Installing Netcat${NC}"
+echo "${RED}[*] Installing Netcat${NC}"
 sudo apt-get install -y netcat
-echo -e "${RED}[*] Installing Openssl${NC}"
+echo "${RED}[*] Installing Openssl${NC}"
 sudo apt-get install -y openssl
-echo -e "${RED}[*] Installing wireshark${NC}"
+echo  "${RED}[*] Installing wireshark${NC}"
 sudo apt-get install -y wireshark
-echo -e "${RED}[*] Installing Openvpn${NC}"
+echo  "${RED}[*] Installing Openvpn${NC}"
 sudo apt-get install -y openvpn
-echo -e "${RED}[*] Installing dnsenum${NC}"
+echo  "${RED}[*] Installing dnsenum${NC}"
 sudo apt-get install -y cpanminus 
 cd ~/toolkit 
 sudo git clone https://github.com/fwaeytens/dnsenum.git 
@@ -34,7 +34,7 @@ cpanm Net::IP
 cpanm Net::DNS 
 cpanm Net::Netmask
 # massdns
-echo -e "${RED}[*] Installing massdns${NC}"
+echo "${RED}[*] Installing massdns${NC}"
 sudo apt-get install -y libldns-dev
 cd ~/toolkit 
 sudo git clone https://github.com/blechschmidt/massdns.git
@@ -45,9 +45,9 @@ cpanm XML::Writer
 
 #Stegano
 
-echo -e "${RED}[*] Installing audacity${NC}"
+echo "${RED}[*] Installing audacity${NC}"
 sudo apt-get install audacity
-read -p "Do you want to download Gimp?" y/n " -n 1 -r
+read -p "Do you want to download Gimp? y/n " -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
