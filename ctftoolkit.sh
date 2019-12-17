@@ -5,7 +5,7 @@ echo "${RED}[*] CTF T00lkit Installer${NC}"
 echo "${RED}[*] Setting up Directories${NC}"
 
 cd ~
-sudo mkdir ctftool
+sudo mkdir toolkit
 mkdir ~/toolkit/wordlists
 
 sudo apt-get update
