@@ -57,40 +57,40 @@ fi
 sudo apt-get install steghide
 #Forensics
 
-echo -e "${RED}[*] Installing BinWalk${NC}"
+echo "${RED}[*] Installing BinWalk${NC}"
 sudo apt-get install binwalk
-echo -e "${RED}[*] Installing ExifTool${NC}"
+echo "${RED}[*] Installing ExifTool${NC}"
 sudo apt-get install exiftool
-echo -e "${RED}[*] Installing xxd-hexdump${NC}"
+echo "${RED}[*] Installing xxd-hexdump${NC}"
 sudo apt-get install xxd
 
 #Reverse
 
-echo -e "${RED}[*] Installing gdb${NC}"
+echo "${RED}[*] Installing gdb${NC}"
 sudo apt-get install gdb
-echo -e "${RED}[*] Installing radare2${NC}"
+echo "${RED}[*] Installing radare2${NC}"
 sudo apt-get install radare2
-echo -e "${RED}[*] Installing IDA PRO${NC}"
+echo "${RED}[*] Installing IDA PRO${NC}"
 wget  -O ~/toolkit "https://out7.hex-rays.com/files/idafree70_linux.run"
-echo -e "${RED}[*] Installing objdump${NC}"
+echo "${RED}[*] Installing objdump${NC}"
 sudo apt-get install objdump
 
 #Crypto
-echo -e "${RED}[*] Installing John the Ripper${NC}"
+echo  "${RED}[*] Installing John the Ripper${NC}"
 sudo apt-get install john
-echo -e "${RED}[*] Installing Hashpump${NC}"
+echo "${RED}[*] Installing Hashpump${NC}"
 cd ~/toolkit 
 sudo git clone https://github.com/bwall/HashPump.git
 sudo apt-get install g++ libssl-dev
 cd HashPump
 sudo make
 sudo make install
-echo -e "${RED}[*] Installing dex2jar${NC}" 
+echo "${RED}[*] Installing dex2jar${NC}" 
 sudo apt-get install dex2jar
 
 
-echo -e "${RED}[*] Tidying up${NC}"
-clean
+echo "${RED}[*] Tidying up${NC}"
+clear
 
-echo -e "${RED}[*] Installation Complete! ${NC}"
-echo -e "${RED}[*] Your tools have been installed in: "$HOME"/toolkit"
+echo "${RED}[*] Installation Complete! ${NC}"
+echo "${RED}[*] Your tools have been installed in: "$HOME"/toolkit"
